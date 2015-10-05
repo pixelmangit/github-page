@@ -1,0 +1,182 @@
+.slogan-block {
+	position: relative;
+	height: $minScreenHeight;
+	max-height: 100%;
+	img{
+		display: block;
+		position: absolute;
+		width: 230px;
+	}
+	#top-slogan {
+	    top: 26px;
+	    right: 80px;
+		
+	}
+	#bottom-slogan {
+	    top: 296px;
+	    left: 119px;
+	}
+	h1 {
+		position: relative;
+		top: 200px;
+		color:#fff;
+		font-size: 35px;
+		line-height: 1.7;
+		letter-spacing: 3px;
+		font-style: italic;
+	}
+	.post-story {
+		background: url(../image/02_slogan/slogan_button.png);
+		background-size: 120px;
+		width: 120px;
+		height: 120px;
+		color: #fff;
+		font-size: 20px;
+		border: 0;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 0px;
+		left: 246px;
+		cursor: pointer;
+	}
+}
+.board {
+	position: absolute;
+	width: 35%;
+	min-width: 425px;
+	left: 5%;
+	top: 10%;
+	color: #fff;
+	line-height: 3em;
+    text-align: left;
+	.board-kanban {
+		background: url(../image/03_about/about_title.png) bottom right no-repeat;
+		background-size: contain;
+		width: 100%;
+		font-size:35px;
+		color:#fff;
+		border-left: 2px solid #fff;
+		height: 55px;
+		margin-bottom: 20px;
+	    padding-left: 15px;
+	    letter-spacing: 8px; 
+	}
+	.board-content {
+		background: url(../image/03_about/about_frame_1.png) left no-repeat;
+		background-size: contain;
+		height: 420px;
+		margin-top: 30px;
+		padding-left: 50px;
+		ul {
+			span {
+				display: block;
+				font-size: 12px;
+				line-height: 2;
+			}
+			li {
+				height: 22px;
+				line-height: 18px;
+				padding-left: 15px;
+				background: url(../image/03_about/about_frame_3.png) left bottom no-repeat;
+				@include background-size(contain);
+			}
+		}
+	}
+}
+.left-menu {
+	position: absolute;
+	width: 400px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color:#fff;
+	background: rgba(1,10,19,.5);
+	.container {
+		width: 100%;
+	}
+	.location-block {
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+		.title-bar {
+			width: 100%;
+			height: 42px;
+			background: url(../image/01_map/map_next.png) no-repeat;
+			background-size: contain;
+			line-height: 48px;
+			text-align: left;
+			padding-left: 15px;
+			font-size: 20px;
+			letter-spacing: 6px;
+		}
+		.card-box {
+			position: relative;
+			width: 100%;
+			height: 68px;
+			background: url(../image/01_map/map_countrycity.png) no-repeat;
+			background-size: contain;
+			span, p{
+				position: absolute;
+			}
+			span {
+				font-size: 12px;
+			}
+			p {
+				width: 100px;
+			}
+			.left-title {
+				left: 8px;
+				top: 4px;
+			}
+			.left-content {
+				left: 20px;
+				top: 33px;
+			}
+			.right-title {
+				left: 146px;
+				top: 4px;
+			}
+			.right-content {
+				left: 158px;
+				top: 33px;
+			}
+		}
+	}
+	.menu-board {
+		height: 50%;
+		padding: 50px;
+		&.contact-board {
+			text-align: left;
+			.content {
+				line-height: 2;
+				margin-bottom: 50px;
+			}
+			.social-block {
+				margin-top: 100px;
+				letter-spacing: 2px;
+				.social-icon {
+					display: inline-block;
+					width: 18px;
+					height: 18px;
+					margin: 0 10px;
+				}
+				.facebook { 
+					background: url(../image/01_map/map_social_s_facebook.png) center no-repeat;
+					background-size: contain;
+				}
+				.twitter { 
+					background: url(../image/01_map/map_social_s_twitter.png) no-repeat;
+					background-size: contain;
+				}
+				.instagram { 
+					background: url(../image/01_map/map_social_s_instagram.png) no-repeat;
+					background-size: contain;
+				}
+				.youtube { 
+					background: url(../image/01_map/map_social_s_youtube.png) no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+}

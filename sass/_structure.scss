@@ -1,0 +1,159 @@
+*{
+	box-sizing: border-box;
+	font-family: '微軟正黑體', 'Microsoft JhengHei', 'STHeiti Light', STHeiti, '儷黑 Pro', sans-serif;
+}
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #021a1a;
+	.wrap-container {
+		position: relative;
+		width: 950px;
+		margin: 0 auto;
+	}
+}
+
+.header {
+	width: 95%;
+	left: 2.5%;
+	height: 70px;
+	position: fixed;
+	z-index: 9;
+	.container {
+		position: relative;
+		width: 960px;
+		margin: 0 auto;
+	}
+	.logo {
+		height: 50px;
+		width: 150px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		background: url(../image/01_map/map_logo.png) no-repeat;
+		text-indent: -9999px;
+		background-size: contain;
+	}
+}
+
+.wrap-map {
+	background: url(../image/01_map/map_bg-top20.png) #021a1a;
+	.map-block {
+		width: 900px;
+		height: 525px;
+		background: url(../image/01_map/map_map.png) 900px;
+		background-size: 100%;
+	}
+}
+.mask {
+		position: absolute;
+	}
+.wrap-slogan {
+	background: url(../image/01_map/map_bg-top20.png) #021a1a;
+	
+	&:before {
+	}
+}
+.wrap-about {
+	background: url(../image/01_map/map_bg-top20.png) #021a1a;
+	.animate-frame-block {
+		position: absolute;
+		width: 80%;
+		height: 100%;
+		right: 0;
+		bottom: 0;
+		
+	}
+	.animate-frame {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	#animate-1 {	
+		background: url(../image/03_about/about_pixelman.png) right bottom no-repeat;
+		background-size: contain;
+	}
+	#animate-2 {
+		height: 90%;
+		width: 60%;
+		bottom: 0;
+		right: 50px;
+		img {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+		.front-pixel {
+			height: 100%;	
+		}
+		.back-pixel {
+			height: 40%;
+			margin-bottom: 90px;
+		}
+
+	}
+	.bottom-line {
+		background: url(../image/03_about/about_frame_3_s.png);
+		position: absolute;
+		top: 590px;
+		width: 85%;
+		height: 10px;
+		left: 55px;
+	}
+
+}
+.wrap-shop {
+	color: #fff;
+	h1 {
+		font-size: 30px;
+		line-height: 2;
+	}
+	p {
+		line-height: 2;
+	}
+	.shop-card {
+		width: 250px;
+		height: 360px;
+		float: left;
+		margin: 10px;
+		background: url(../image/04_shop/shop_normal.png) no-repeat;
+		background-size: contain;
+		.thumb-nail {
+			position: relative;
+			width: 247px;
+			height: 306px;
+			top: 1px;
+			left: 1px;
+			background: url(../image/sample.png) center no-repeat;
+			background-size: cover;
+		}
+		.des-block {
+			position: relative;
+			width: 248px;
+			height: 50px;
+			line-height: 50px;
+			margin-top: 3px;
+			left: 1px;
+			color: #Fff;
+		}
+		&:hover {
+			background: url(../image/04_shop/shop_mouse.png) no-repeat;
+			background-size: contain;
+		}
+	}
+}
+.animate-frame, .board, .bottom-line {
+	opacity: 0;
+	&.active {
+		opacity: 1;
+	-webkit-transition: all 2s ease;
+	   -moz-transition: all 2s ease;
+	    -ms-transition: all 2s ease;
+	     -o-transition: all 2s ease;
+	        transition: all 2s ease;
+	}
+}
